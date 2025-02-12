@@ -1,4 +1,6 @@
 Revision history for Time-Spec
 
 {{$NEXT}}
-          Initial release to an unsuspecting world
+          - Split Time::Spec out of Signal-Info distribution
+          - Add new_from_pair and to_pair methods
+          - Add numification overloading
