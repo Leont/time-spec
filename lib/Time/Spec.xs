@@ -16,11 +16,17 @@ MODULE = Time::Spec		PACKAGE = Time::Spec	PREFIX = timespec_
 PROTOTYPES: DISABLED
 
 Time::Spec timespec_new(class, struct timespec value)
+CODE:
+	RETVAL = safecalloc(1, sizeof(struct timespec));
+	*RETVAL = value;
+OUTPUT:
+	RETVAL
 
 Time::Spec timespec_new_from_pair(class, UV secs, UV nsecs)
 CODE:
-	struct timespec retval = (struct timespec){ .tv_sec = secs, .tv_nsec = nsecs };
-	RETVAL = &retval;
+	RETVAL = safecalloc(1, sizeof(struct timespec));
+	RETVAL->tv_sec = secs;
+	RETVAL->tv_nsec = nsecs;
 OUTPUT:
 	RETVAL
 
