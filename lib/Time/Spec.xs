@@ -5,8 +5,6 @@
 
 typedef struct timespec* Time__Spec;
 
-#define timespec_new(class, value) &(value)
-#define timespec_new_from_pair(class, secs, nsecs)
 #define timespec_sec(self) (self)->tv_sec
 #define timespec_nsec(self) (self)->tv_nsec
 #define timespec_to_float(self) (self)->tv_sec + ((self)->tv_nsec / (double)1000000000)

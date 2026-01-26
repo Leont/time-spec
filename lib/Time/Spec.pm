@@ -50,4 +50,4 @@ Convert the time back into fractional seconds.
 
 =method to_pair()
 
-This returns a pair of seconds an nanoseconds of the object.
+This returns a pair of seconds and nanoseconds of the object.
