@@ -1,6 +1,7 @@
 Revision history for Time-Spec
 
 {{$NEXT}}
+          - Make overloads pass basic sanity
 
 0.003     2025-02-12 15:52:03+01:00 Europe/Brussels
           - Re-release with correct version

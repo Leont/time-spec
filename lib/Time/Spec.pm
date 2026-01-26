@@ -4,7 +4,8 @@ use strict;
 use warnings;
 
 use overload
-	'0+'     => \&to_float,
+	'0+'     => sub { $_[0]->to_float },
+	bool     => sub { 1 },
 	fallback => 1;
 
 use XSLoader;
