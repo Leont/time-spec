@@ -1,6 +1,7 @@
 Revision history for Time-Spec
 
 {{$NEXT}}
+          - Avoid using POSIX::round() for backwards compatability
 
 0.006     2026-01-27 18:58:36+01:00 Europe/Brussels
           - Fix tests for longdouble/quadmath

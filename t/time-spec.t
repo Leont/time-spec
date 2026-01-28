@@ -4,14 +4,13 @@ use strict;
 use warnings;
 
 use Test::More;
-use POSIX 'round';
 
 use Time::Spec;
 
 sub round_to {
 	my ($number, $offset) = @_;
 	my $factor = 10 ** $offset;
-	return $factor * round($number / $factor);
+	return $factor * int($number / $factor + 0.5);
 }
 
 my $spec0 = Time::Spec->new_from_pair(3, 600000000);
