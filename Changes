@@ -1,6 +1,8 @@
 Revision history for Time-Spec
 
 {{$NEXT}}
+
+0.007     2026-01-29 00:52:12+01:00 Europe/Brussels
           - Avoid using POSIX::round() for backwards compatability
 
 0.006     2026-01-27 18:58:36+01:00 Europe/Brussels
