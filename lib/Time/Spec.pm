@@ -3,11 +3,6 @@ package Time::Spec;
 use strict;
 use warnings;
 
-use overload
-	'0+'     => sub { $_[0]->to_float },
-	bool     => sub { 1 },
-	fallback => 1;
-
 use XSLoader;
 
 XSLoader::load(__PACKAGE__, __PACKAGE__->VERSION);
