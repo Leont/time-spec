@@ -34,6 +34,10 @@ PROTOTYPES: DISABLE
 
 FALLBACK: TRUE
 
+TYPEMAP: <<END
+Time::Spec T_OPAQUEOBJ
+END
+
 Time::Spec timespec_new(class, struct timespec value)
 CODE:
 	RETVAL = safecalloc(1, sizeof(struct timespec));
