@@ -2,6 +2,7 @@ Revision history for Time-Spec
 
 {{$NEXT}}
           - Move overloads to XS
+          - Add addition and substraction overloads
 
 0.007     2026-01-29 00:52:12+01:00 Europe/Brussels
           - Avoid using POSIX::round() for backwards compatability
