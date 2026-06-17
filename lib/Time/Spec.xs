@@ -41,7 +41,7 @@ OVERLOAD: 0+
 bool timespec__to_bool(Time::Spec self, ...)
 OVERLOAD: bool
 
-void timespec_to_pair(Time::Spec self)
-PPCODE:
-	mXPUSHi(self->tv_sec);
-	mXPUSHi(self->tv_nsec);
+void timespec_to_pair(Time::Spec self, OUTLIST UV sec, OUTLIST UV nsec)
+CODE:
+	sec = self->tv_sec;
+	nsec = self->tv_nsec;
